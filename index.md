@@ -1,7 +1,7 @@
 # Resume
 
 ## Contact Information
-- **Email:** [your email]
+- **Email:** natalia.zaewadyl@gmail.com
 - **Phone:** [your phone]
 - **Location:** [your location]
 - **LinkedIn:** [your LinkedIn URL]

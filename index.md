@@ -1,4 +1,5 @@
 # NATALIA ZAWADYL
+
 **Koordynatorka ds. Marketingu i Komunikacji**
 
 ## O MNIE

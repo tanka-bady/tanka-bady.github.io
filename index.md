@@ -67,7 +67,7 @@ Specjalizacja: Marketing i Sprzedaż
 ---
 
 ## CERTYFIKATY
-- **Certyfikat kursu Umiejętności Jutra AI 3.0** (Google & SGH) | 17.06.2026
+- **Certyfikat kursu Umiejętności Jutra AI 3.0** (Google & SGH) \| 17.06.2026
 
 ---
 

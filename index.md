@@ -4,7 +4,7 @@
 
 ## O MNIE
 Koordynatorka ds. marketingu i komunikacji z doświadczeniem w operacyjnej obsłudze kampanii reklamowych oraz zarządzaniu procesami B2B. Skutecznie łączę działania marketingowe z analityką, wykorzystując wiedzę z zakresu psychologii (w trakcie studiów) do analizy mechanizmów decyzyjnych klientów. Aktywnie rozwijam kompetencje cyfrowe – absolwentka programu „Umiejętności Jutra AI 3.0” (Google & SGH), skoncentrowana na optymalizacji sprzedaży e-commerce przy użyciu narzędzi AI oraz pakietu MS Office.
-![moje zdj](./IMG_1766.JPG)
+<img src="./IMG_1766.JPG" alt="Opis zdjęcia" width="300">
 ---
 
 ## KONTAKT

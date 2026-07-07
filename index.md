@@ -3,8 +3,8 @@
 **Koordynatorka ds. Marketingu i Komunikacji**
 
 ## O MNIE
-Koordynatorka ds. marketingu i komunikacji z doświadczeniem w operacyjnej obsłudze kampanii reklamowych oraz zarządzaniu procesami B2B. Skutecznie łączę działania marketingowe z analityką, wykorzystując wiedzę z zakresu psychologii do analizy mechanizmów decyzyjnych klientów. Aktywnie rozwijam kompetencje cyfrowe – absolwentka programu „Umiejętności Jutra AI 3.0” (Google & SGH), skoncentrowana na optymalizacji sprzedaży e-commerce przy użyciu narzędzi AI oraz pakietu MS Office.
-
+Koordynatorka ds. marketingu i komunikacji z doświadczeniem w operacyjnej obsłudze kampanii reklamowych oraz zarządzaniu procesami B2B. Skutecznie łączę działania marketingowe z analityką, wykorzystując wiedzę z zakresu psychologii (w trakcie studiów) do analizy mechanizmów decyzyjnych klientów. Aktywnie rozwijam kompetencje cyfrowe – absolwentka programu „Umiejętności Jutra AI 3.0” (Google & SGH), skoncentrowana na optymalizacji sprzedaży e-commerce przy użyciu narzędzi AI oraz pakietu MS Office.
+![moje zdj](./IMG_1766.JPG)
 ---
 
 ## KONTAKT
@@ -18,7 +18,7 @@ Koordynatorka ds. marketingu i komunikacji z doświadczeniem w operacyjnej obsł
 
 **Pwe Trade Sp. z o. o. (Deli Food & Wine)** | 11.2023 - 04.2026
 *Koordynatorka ds. Marketingu i Komunikacji*
-- **Zarządzanie zespołem i kampaniami e-content** Profesjonalne zarządzanie 14-osobowym zespołem, koordynacja prac oraz kompleksowa realizacja działań promocyjnych w kanałach online i placówkach stacjonarnych, a także wsparcie sprzedaży we współpracy z kluczowymi klientami.
+- **Zarządzanie e-contentem i kampaniami** Kompleksowa realizacja działań promocyjnych w kanałach online oraz placówkach stacjonarnych, wsparcie zespołu sprzedaży w bieżącej współpracy z kluczowymi klientami.
 - **Analityka i KPI** Monitorowanie skuteczności kampanii, prowadzenie cyklicznych raportów sprzedaży oraz praca analityczna polegająca na łączeniu danych z wielu źródeł w celu optymalizacji działań sprzedażowych.
 - **Współpraca z partnerami** Bezpośrednia koordynacja działań B2B zapewniająca wysoką jakość obsługi klientów zagranicznych oraz wsparcie procesowe przy wdrażaniu nowych kanałów sprzedaży (platformy delivery).
 - **Optymalizacja procesów** Wykorzystanie narzędzi AI oraz pakietu MS Office (w tym zaawansowany Excel) do wsparcia zespołu sprzedaży oraz automatyzacji codziennych zadań administracyjnych.

@@ -10,7 +10,7 @@ Koordynatorka ds. marketingu i komunikacji z doświadczeniem w operacyjnej obsł
 ## KONTAKT
 - **Telefon:** +48 737 460 944
 - **Email:** natalia.zawadyl@gmail.com
-- **LinkedIn:** [Profil LinkedIn](#)
+- **LinkedIn:** [Profil LinkedIn](https://www.linkedin.com/in/natalia-zawadyl/)
 
 ---
 

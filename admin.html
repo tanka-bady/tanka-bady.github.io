@@ -136,23 +136,97 @@
 
         /* Ustawienia do druku */
         @media print {
-            body {
-                background: none;
-                margin: 0;
-                padding: 0;
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            .cv-container {
-                box-shadow: none;
-                margin: 0;
-                max-width: 100%;
-                width: 100%;
-                border: none;
-            }
             @page {
                 size: A4;
+                margin: 10mm;
+            }
+
+            html, body {
+                background: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color-adjust: exact;
+            }
+
+            body {
                 margin: 0;
+                padding: 0;
+                font-size: 12px;
+                line-height: 1.4;
+            }
+
+            /* Ustawienie układu: kolumna boczna + główna na szerokość A4 */
+            .cv-container {
+                box-shadow: none;
+                margin: 0 auto;
+                max-width: 210mm;
+                width: 100%;
+                border: none;
+                display: grid;
+                grid-template-columns: 70mm 1fr;
+                grid-auto-rows: min-content;
+            }
+
+            .sidebar {
+                padding: 12px 10px;
+                border-right: 1px solid var(--border-color);
+            }
+
+            .main-content {
+                padding: 12px;
+            }
+
+            .profile-pic {
+                max-width: 120px;
+            }
+
+            h1 {
+                font-size: 28px; /* zachowaj proporcje nagłówka */
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 12px;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+
+            .job-meta {
+                font-size: 11px;
+            }
+
+            ul {
+                padding-left: 18px;
+                margin-top: 4px;
+                margin-bottom: 8px;
+            }
+
+            /* Zapobiegaj dzieleniu ważnych bloków między stronami */
+            .job, .edu, .rodo-clause, .skills-list, .contact-list, .hobby-list {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .rodo-clause {
+                font-size: 11px;
+                margin-top: 8px;
+                text-align: justify;
+                border-top: 1px solid var(--border-color);
+                padding-top: 8px;
+            }
+
+            /* Dostosowania końcowe: usuń cienie i zbędne marginesy */
+            .cv-container, .sidebar, .main-content {
+                box-shadow: none;
             }
         }
     </style>

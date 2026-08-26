@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Zawadyl - CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-gray: #f9f9f9;
+            --border-color: #e0e0e0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeff1;
+        }
+
+        .cv-container {
+            max-width: 950px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 2.2fr;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background-color: var(--light-gray);
+            padding: 40px; /* dopasowane do .main-content */
+            border-right: 1px solid var(--border-color);
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .profile-pic {
+            width: 100%;
+            max-width: 160px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0 0 5px 0;
+            font-size: 32px; /* fixed to remain visually unchanged */
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 18px; /* increased by one step */
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 9px;
+            margin-bottom: 16px;
+        }
+
+        .sidebar h2 {
+            margin-top: 9px;
+        }
+
+        h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
+
+        .job-meta {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .contact-list, .skills-list, .lang-list, .hobby-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 7px;
+        }
+
+        .contact-list a {
+            color: var(--text-color);
+            text-decoration: underline;
+        }
+
+        .about-text {
+            text-align: justify;
+            margin-bottom: 11px;
+        }
+
+        .rodo-clause {
+            font-size: 0.7em;
+            color: #888;
+            margin-top: 10px;
+            text-align: justify;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+
+        /* Ustawienia do druku */
+        @media print {
+            @page {
+                size: A4;
+                margin: 10mm;
+            }
+
+            html, body {
+                background: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color-adjust: exact;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-size: 12px;
+                line-height: 1.4;
+            }
+
+            /* Ustawienie układu: kolumna boczna + główna na szerokość A4 */
+            .cv-container {
+                box-shadow: none;
+                margin: 0 auto;
+                max-width: 210mm;
+                width: 100%;
+                border: none;
+                display: grid;
+                grid-template-columns: 70mm 1fr;
+                grid-auto-rows: min-content;
+            }
+
+            .sidebar {
+                padding: 12px 10px;
+                border-right: 1px solid var(--border-color);
+            }
+
+            .main-content {
+                padding: 12px;
+            }
+
+            .profile-pic {
+                max-width: 120px;
+            }
+
+            h1 {
+                font-size: 28px; /* zachowaj proporcje nagłówka */
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 12px;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+
+            .job-meta {
+                font-size: 11px;
+            }
+
+            ul {
+                padding-left: 18px;
+                margin-top: 4px;
+                margin-bottom: 8px;
+            }
+
+            /* Zapobiegaj dzieleniu ważnych bloków między stronami */
+            .job, .edu, .rodo-clause, .skills-list, .contact-list, .hobby-list {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .rodo-clause {
+                font-size: 11px;
+                margin-top: 9px;
+                text-align: justify;
+                border-top: 1px solid var(--border-color);
+                padding-top: 9px;
+            }
+
+            /* Dostosowania końcowe: usuń cienie i zbędne marginesy */
+            .cv-container, .sidebar, .main-content {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <!-- Panel boczny -->
+    <aside class="sidebar">
+        <img src="./IMG_1766.JPG" alt="Natalia Zawadyl" class="profile-pic">
+        
+        <h2>Kontakt</h2>
+        <ul class="contact-list">
+            <li>+48 737 460 944</li>
+            <li><a href="mailto:natalia.zawadyl@gmail.com">natalia.zawadyl@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/natalia-zawadyl/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+
+        <h2>Umiejętności</h2>
+        <ul class="skills-list">
+            <li><strong>Administracja i HR:</strong> Wsparcie procesów rekrutacyjnych, wstępne rozmowy z kandydatami, onboarding pracowników, nadzór nad obiegiem dokumentów i faktur oraz weryfikacja poprawności danych.</li>
+            <li><strong>Organizacja pracy:</strong> Doskonała organizacja pracy własnej i zdalnej, wielozadaniowość, umiejętność ustalania priorytetów, pilnowanie wielu terminów jednocześnie oraz skrupulatność.</li>
+            <li><strong>Narzędzia i systemy:</strong> Microsoft 365, Google Workspace, systemy CRM, EZD, narzędzia AI.</li>
+            <li><strong>Kompetencje miękkie:</strong> Uczciwość, dyskrecja, wysokie zdolności komunikacyjne, łatwość w nawiązywaniu relacji, proaktywność oraz samodzielne szukanie rozwiązań problemów.</li>
+        </ul>
+
+        <h2>Języki</h2>
+        <ul class="lang-list">
+            <li>Angielski B2/C1</li>
+            <li>Francuski A2/B1</li>
+            <li>Polski ojczysty</li>
+        </ul>
+
+        <h2>Certyfikaty</h2>
+        <p>Certyfikat kursu Umiejętności Jutra AI 3.0 (Google & SGH) | 17.06.2026</p>
+
+        <h2>Hobby</h2>
+        <ul class="hobby-list">
+            <li>Psychologia poznawczo - behawioralna</li>
+            <li>Wystąpienia publiczne i teatr (wieloletnie doświadczenie sceniczne m.in. Teatr Studio Buffo)</li>
+            <li>Sporty ekstremalne i skating</li>
+            <li>Podróże i etnografia (eksploracja Europy - 22 odwiedzone kraje)</li>
+            <li>Psychologia mody i wizerunku</li>
+        </ul>
+    </aside>
+
+    <!-- Główna zawartość -->
+    <main class="main-content">
+        <h1>Natalia Zawadyl</h1>
+        <div class="subtitle">Koordynatorka ds. Marketingu i Komunikacji</div>
+
+        <h2>O mnie</h2>
+        <p class="about-text">
+            Studentka psychologii z pasją do tworzenia wizerunku marki, komunikacji i marketingu. Posiadam doświadczenie w koordynacji działań promocyjnych, zarządzaniu zespołem oraz prowadzeniu mediów społecznościowych z sukcesem zasięgowym. Łączę wiedzę psychologiczną ze zmysłem analitycznym i znajomością nowoczesnych narzędzi AI (Absolwentka programu „Umiejętności Jutra AI 3.0”) oraz graficznych, co pozwala mi efektywnie realizować kampanie online i offline. Szukam wyzwań w obszarze marketingu i social mediów, gdzie wykorzystam swoją kreatywność oraz umiejętności organizacyjne.
+        </p>
+
+        <h2>Doświadczenie</h2>
+
+        <div class="job">
+            <h3>Pwe Trade Sp. z o. o. (Deli Food & Wine)</h3>
+            <div class="job-meta">Koordynatorka ds. Marketingu i Komunikacji | 11.2023 – 04.2026</div>
+            <ul>
+                <li><strong>Zarządzanie e-contentem i kampaniami:</strong> Kompleksowa realizacja działań promocyjnych w kanałach online oraz placówkach stacjonarnych, koordynacja produkcji i dystrybucji materiałów POS (banery, plakaty) oraz wsparcie zespołu sprzedaży w relacjach z kluczowymi klientami i ekspozycji materiałów do emisji.</li>
+                <li><strong>Zarządzanie zespołem i operacje:</strong> Kierowanie 14-osobowym zespołem, planowanie pracy, delegowanie zadań, optymalizacja codziennych procesów administracyjnych oraz wsparcie zespołu z wykorzystaniem narzędzi AI i pakietu MS Office (zaawansowany Excel).</li>
+                <li><strong>Analityka i KPI:</strong> Monitorowanie skuteczności kampanii, prowadzenie cyklicznych raportów sprzedaży oraz praca analityczna polegająca na łączeniu danych z wielu źródeł w celu optymalizacji działań sprzedażowych.</li>
+                <li><strong>Współpraca z partnerami i rozwój sprzedaży:</strong> Bezpośrednia koordynacja działań B2B, zapewniająca wysoką jakość obsługi klientów zagranicznych oraz wsparcie procesowe przy wdrażaniu nowych kanałów sprzedaży (platformy delivery).</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Toyota Central Europe Sp. z o. o.</h3>
+            <div class="job-meta">Staż w dziale Planowania i Administracji Sprzedaży | 03.2023 – 09.2023</div>
+            <ul>
+                <li><strong>Operacyjna obsługa zamówień i floty:</strong> Koordynacja i realizacja rezerwacji pojazdów (flota, testowe, ekspozycyjne) w systemie CRM oraz kompleksowe wsparcie procesów biurowych.</li>
+                <li><strong>Weryfikacja danych i dokumentacji:</strong> Kontrola poprawności umów, faktur oraz bieżąca aktualizacja danych i statusów w bazach danych zgodnie z procedurami firmy.</li>
+                <li><strong>Wsparcie sieci sprzedaży:</strong> Współpraca z zespołami handlowymi w zakresie aktualizacji ofert, cenników i materiałów oraz pilnowanie terminowego obiegu dokumentacji w MS Excel i systemach wewnętrznych.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Uniwersytet WSB Merito w Warszawie</h3>
+            <div class="job-meta">Wiceprzewodnicząca Samorządu Studenckiego | 02.2021 – 09.2023</div>
+            <ul>
+                <li><strong>Zarządzanie dokumentacją i finansami:</strong> Nadzór nad obiegiem dokumentów finansowych i faktur, bieżące raportowanie, planowanie budżetu Samorządu, skrupulatna weryfikacja wniosków w Komisji Stypendialnej w oparciu o ustalone procedury prawne.</li>
+                <li><strong>Koordynacja projektów:</strong> Współorganizacja Juwenaliów 2023 (projekt dla 10 000 osób), wymagająca zarządzania logistyką oraz ścisłej współpracy z podmiotami zewnętrznymi.</li>
+                <li><strong>Komunikacja, eventy i organizacja:</strong> Prowadzenie oficjalnych kanałów społecznościowych (zasięg 14 tys. obserwatorów) we współpracy z działem Marketingu i PR Uczelni, wsparcie procesów komunikacji z kandydatami, a także organizacja spotkań, szkoleń, eventów i kompleksowe przygotowanie wyjazdów wymagające koordynacji wielu zadań jednocześnie.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>UKS Akademia Pani Szafki</h3>
+            <div class="job-meta">Praktyki studenckie | 04.2021 – 06.2021</div>
+            <ul>
+                <li><strong>Wsparcie marketingowe i social media:</strong> Samodzielne prowadzenie kanałów społecznościowych oraz czynny udział w eventach i kampaniach promocyjnych placówki.</li>
+                <li><strong>Koordynacja operacyjna i harmonogramy:</strong> Samodzielne tworzenie i pilnowanie złożonych grafików pracy, zajęć oraz zastępstw, wymagające doskonałej organizacji czasu i nadzoru nad pracą instruktorów.</li>
+                <li><strong>Administracja i logistyka:</strong> Bieżąca dbałość o porządek organizacyjny, prowadzenie obiegu dokumentów biurowych oraz kontrola stanów magazynowych zapewniająca płynność działalności.</li>
+            </ul>
+        </div>
+
+        <h2>Wykształcenie</h2>
+        <div class="edu">
+            <h3>Uczelnia Korczaka</h3>
+            <div class="job-meta">Psychologia kliniczna | 2025 - Obecnie</div>
+        </div>
+        <div class="edu" style="margin-top: 15px;">
+            <h3>Uniwersytet WSB Merito w Warszawie</h3>
+            <div class="job-meta">Licencjat Zarządzanie (Specjalizacja: Marketing i Sprzedaż) | 2020 - 2023</div>
+        </div>
+
+        <p class="rodo-clause">
+            Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO). Wyrażam również zgodę na przetwarzanie moich danych osobowych w celu prowadzenia przyszłych rekrutacji.
+        </p>
+
+    </main>
+</div>
+
+</body>
+</html>
